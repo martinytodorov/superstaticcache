@@ -8,7 +8,7 @@ class SuperStaticCache extends CApplicationComponent
 {
     const SSC_DEFAULT_CACHE = '/runtime/superstaticcache/';
 
-    public $enable;
+    public $enabled;
     public $sURL;
     public $duration;
     public $htmlContent;
@@ -20,9 +20,6 @@ class SuperStaticCache extends CApplicationComponent
 
     public function init()
     {
-        if(!Yii::app()->superStaticCache->enabled)
-            return false;
-
         $this->_composeFileName();
     }
 
