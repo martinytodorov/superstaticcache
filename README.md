@@ -14,6 +14,7 @@ Load it in *config/main.php* in the *components* array with the following:
 // Super Static Cache definition
 'superStaticCache' => array(
 	'class' => 'SuperStaticCache',
+	'enable' => true,
 	'duration' => 300, //equals 5 minutes
 	'cacheHomepage' => true,
 	'controllers' => array(
